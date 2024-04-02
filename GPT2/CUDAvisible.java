@@ -1,0 +1,1 @@
+String cudaDevices = System.getProperty("CUDA_VISIBLE_DEVICES");
