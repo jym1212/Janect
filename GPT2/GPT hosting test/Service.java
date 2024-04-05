@@ -11,36 +11,36 @@ public class GPTService {
         this.objectMapper = objectMapper;
     }
 
-//DB에서 수질 정보 가져오는 메소드
-    public String getWaterInfo(String id) {
-        String url = "http://localhost:8080/waterinfo/yearly/" + id;
+//DB에서 '' 가져오는 메소드
+    public String getCertificateInfo(String id) {
+        String url = "http://localhost:8080/CertificatesInfo/yearly/" + id;
        //
         ...
     }
 
-//DB에서 급이 기록 가져오는 메소드
-    public String getFoodRecord() {
-        String url = "http://localhost:8080/fish-info/food-record";
+//DB에서 '' 가져오는 메소드
+    public String getCertificateRecord() {
+        String url = "http://localhost:8080/CertificatesInfo/table";
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
         return response.getBody();
     }
 
-//DB에서 일출,일몰 시간 가져오는 메소드
-    public String getSunriseSunset() {
-        String url = "http://localhost:8080/weather/sunrise-sunset";
+//DB에서 ''가져오는 메소드
+    public String getHardLevel() {
+        String url = "http://localhost:8080/CertificatesInfo/HardLevel";
         ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, null, String.class);
         return response.getBody();
     }
 
 //질문하기 전에 GPT에 데이터 Input
-    public String prepareMessage(String waterInfo, String foodRecord, String sunriseSunset) {
-        return "Here is the water info for the year: " + waterInfo + "\n"
-                + "Here is the feeding record: " + foodRecord + "\n"
-                + "Here is the sunrise and sunset info for today: " + sunriseSunset + "\n";
+    public String prepareMessage(String CertificateInfo, String CertificateRecord, String HardLevel) {
+        return "Here is the Certificate info for the year: " + CertificateInfo + "\n"
+                + "Here is the Certificate record: " + CertificateRecord + "\n"
+                + "Here is the sunrise and sunset info for today: " + HardLevel + "\n";
     }
 
-//일출, 일몰 시간 String -> LocalTime으로 파싱
-    private SunriseSunsetData parseSunriseSunset(String sunriseSunset) {
+// String -> LocalTime으로 파싱
+    private SunriseSunsetData parseSunriseSunset(String HardLevel) {
         // ...
     }
 
@@ -48,25 +48,21 @@ public class GPTService {
     public String askGPT(String question) {
         try {
           // Data Input
-            String waterInfo = getWaterInfo("1");
-            String foodRecord = getFoodRecord();
-            String sunriseSunset = getSunriseSunset();
-            String preMessage = prepareMessage(waterInfo, foodRecord, sunriseSunset);
+            String CertificateInfo = getCertificateInfo("1");
+            String CertificateRecord = getCertificateRecord();
+            String HardLevel = getHardLevel();
+            String preMessage = prepareMessage(CertificateInfo, foodRecord, sunriseSunset);
 
             String modifiedQuestion = question.toLowerCase();
             // 다음과 같은 질문을 포함한 경우의 답변 매뉴얼 생성
-            if (modifiedQuestion.contains("밥을 언제 줄까?")) {
+            if (modifiedQuestion.contains("시험 정보에 대해 알려줘")) {
                 SunriseSunsetData sunriseSunsetData = parseSunriseSunset(sunriseSunset);
                 if (sunriseSunsetData != null) {
                     LocalDateTime sunriseDateTime = sunriseSunsetData.getSunriseDateTime();
                     LocalDateTime sunsetDateTime = sunriseSunsetData.getSunsetDateTime();
 
-                    // 밥 주는 시간 계산
-
-                    // 밥 주는 시간을 문자열로 포맷팅 
-
-                    // 응답에 밥 주는 시간 추가하기
-                    preMessage += "광어에게 밥을 줄 시간은 아침: " + formattedFeedingTime1 + ", 저녁: " + formattedFeedingTime2 + "입니다.";
+                
+                    preMessage += "시험의 주제는 이렇습니다. : " + formattedtextlogic1 + ", 난이도는: " + formattedtextlogic2 + "입니다.";
                 } else {
                     // 오류 처리 로직 추가
                 }
