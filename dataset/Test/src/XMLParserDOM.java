@@ -35,7 +35,6 @@ public class XMLParserDOM {
                 System.out.println("pilpscnt5: " + element.getElementsByTagName("pilpscnt5").item(0).getTextContent());
                 System.out.println("pilpscnt6: " + element.getElementsByTagName("pilpscnt6").item(0).getTextContent());
                 System.out.println("pilpscnt7: " + element.getElementsByTagName("pilpscnt7").item(0).getTextContent());
-                // Retrieve other elements similarly
             }
         }
     }
