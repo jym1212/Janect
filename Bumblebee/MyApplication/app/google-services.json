@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "87306371618",
+    "project_id": "bumblebee-5f425",
+    "storage_bucket": "bumblebee-5f425.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:87306371618:android:5d9f27c75d08e3009c407b",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAn-XMll7E3AOGq5ZzMYScAPA-5cKkHXDk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
