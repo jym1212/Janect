@@ -1,0 +1,1 @@
+java -DCUDA_VISIBLE_DEVICES=0 -jar YourApplication.jar
