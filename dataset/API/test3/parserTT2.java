@@ -9,7 +9,7 @@ public class parserTT2 {
     public static void main(String[] args) throws IOException {
         // Constructing the URL for the API request
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B490007/qualAcquPtcond/getQualAcquPtcond"); /*URL*/
-        urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "=iBnhEtxdvRgWB11T/LDEYLkaJ4HMmCecarGXtMain7K20fr/7JhIxc1Q6VYvXE9SzOGXjcCYgr22eBhvAxxtxA=="); // Service Key
+        urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "="+"iBnhEtxdvRgWB11T/LDEYLkaJ4HMmCecarGXtMain7K20fr/7JhIxc1Q6VYvXE9SzOGXjcCYgr22eBhvAxxtxA=="); // Service Key
         urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); // Number of rows per page
         urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); // Page number
         urlBuilder.append("&" + URLEncoder.encode("dataFormat","UTF-8") + "=" + URLEncoder.encode("xml", "UTF-8")); // Data format
@@ -32,7 +32,7 @@ public class parserTT2 {
         conn.setRequestMethod("GET");
 
         // Setting the content type according to the requested data format
-        conn.setRequestProperty("Accept", "application/xml");
+        conn.setRequestProperty("Accept", "application/json");
 
         // Printing the response code to check connection status
         System.out.println("Response code: " + conn.getResponseCode());
