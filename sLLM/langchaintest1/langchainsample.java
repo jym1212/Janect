@@ -12,7 +12,7 @@ public class XmlLlmProcessor {
 
     public XmlLlmProcessor(Context context) {
         try {
-            tfliteInterpreter = new Interpreter(loadModelFile(context, "model.tflite")); // Specify model filename
+            tfliteInterpreter = new Interpreter(loadModelFile(context, "outputsample.txt")); // Specify model filename
         } catch (IOException e) {
             Log.e("XmlLlmProcessor", "Error loading model", e);
         }
@@ -51,3 +51,4 @@ public class XmlLlmProcessor {
         return "Processed result: " + outputTensor[0][0];
     }
 }
+ 
