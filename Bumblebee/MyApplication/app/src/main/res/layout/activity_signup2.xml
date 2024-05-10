@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUp2_activity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="55dp"
+                android:text="Choose\nConcern"
+                android:textColor="#ffffff"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="15dp"
+                android:text="관심있는 분야가 무엇인가요?"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="35dp"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:id="@+id/concern_radioGroup1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/construction_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/construction"
+                        android:padding="12dp"
+                        android:text="건설"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/management_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/management"
+                        android:padding="12dp"
+                        android:text="경영"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/education"
+                        android:padding="12dp"
+                        android:text="교육"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/concern_radioGroup2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/law_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/law"
+                        android:padding="12dp"
+                        android:text="법률"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/society_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/society"
+                        android:padding="12dp"
+                        android:text="사회 복지"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/food_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/food"
+                        android:padding="12dp"
+                        android:text="식품"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RadioGroup>
+
+                <RadioGroup
+                    android:id="@+id/concern_radioGroup3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/medical_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/medical"
+                        android:padding="12dp"
+                        android:text="의료"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/electricity_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/electricity"
+                        android:padding="12dp"
+                        android:text="전기 전자"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/communication_button"
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginTop="30dp"
+                        android:background="@drawable/button3_background"
+                        android:button="#ffffff"
+                        android:drawableTop="@drawable/communication"
+                        android:padding="12dp"
+                        android:text="정보 통신"
+                        android:textAlignment="center"
+                        android:textColor="#ffffff"
+                        android:textSize="15dp" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/login_imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/btn_login" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
