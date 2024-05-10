@@ -1,5 +1,4 @@
 // https://www.data.go.kr/data/15074415/openapi.do
-
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
@@ -12,17 +11,11 @@ public class parserTT2 {
         // Constructing the URL for the API request
         StringBuilder urlBuilder = new StringBuilder("http://apis.data.go.kr/B490007/qualAcquPtcond/getQualAcquPtcond"); /*URL*/
         urlBuilder.append("?" + URLEncoder.encode("serviceKey","UTF-8") + "="+"iBnhEtxdvRgWB11T/LDEYLkaJ4HMmCecarGXtMain7K20fr/7JhIxc1Q6VYvXE9SzOGXjcCYgr22eBhvAxxtxA=="); // Service Key
-        urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("10", "UTF-8")); // Number of rows per page
+        urlBuilder.append("&" + URLEncoder.encode("numOfRows","UTF-8") + "=" + URLEncoder.encode("200", "UTF-8")); // Increase number of rows to 200 per page
         urlBuilder.append("&" + URLEncoder.encode("pageNo","UTF-8") + "=" + URLEncoder.encode("1", "UTF-8")); // Page number
         urlBuilder.append("&" + URLEncoder.encode("dataFormat","UTF-8") + "=" + URLEncoder.encode("xml", "UTF-8")); // Data format
         urlBuilder.append("&" + URLEncoder.encode("acquYy","UTF-8") + "=" + URLEncoder.encode("2020", "UTF-8")); // Year of qualification acquisition
-        urlBuilder.append("&" + URLEncoder.encode("qualgbCd","UTF-8") + "=" + URLEncoder.encode("T", "UTF-8")); // Type of qualification
-        urlBuilder.append("&" + URLEncoder.encode("rgnCd","UTF-8") + "=" + URLEncoder.encode("001", "UTF-8")); // Regional code
-        urlBuilder.append("&" + URLEncoder.encode("ageGrupCd","UTF-8") + "=" + URLEncoder.encode("3", "UTF-8")); // Age group code
-        urlBuilder.append("&" + URLEncoder.encode("genderCd","UTF-8") + "=" + URLEncoder.encode("M", "UTF-8")); // Gender code
-        urlBuilder.append("&" + URLEncoder.encode("seriesCd","UTF-8") + "=" + URLEncoder.encode("03", "UTF-8")); // Series code
-        urlBuilder.append("&" + URLEncoder.encode("jmCd","UTF-8") + "=" + URLEncoder.encode("1320", "UTF-8")); // Qualification code
-        urlBuilder.append("&" + URLEncoder.encode("jmNm","UTF-8") + "=" + URLEncoder.encode("정보처리기사", "UTF-8")); // Qualification name
+        // Removed specific qualification filter to fetch a broader dataset
 
         // Creating a URL object
         URL url = new URL(urlBuilder.toString());
@@ -34,7 +27,7 @@ public class parserTT2 {
         conn.setRequestMethod("GET");
 
         // Setting the content type according to the requested data format
-        conn.setRequestProperty("Accept", "application/json");
+        conn.setRequestProperty("Accept", "application/xml"); // Set to XML since the format requested is XML
 
         // Printing the response code to check connection status
         System.out.println("Response code: " + conn.getResponseCode());
