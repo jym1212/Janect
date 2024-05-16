@@ -54,7 +54,7 @@ public class Signup1Activity extends AppCompatActivity {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot.child(EMAIL).exists()){
+                        if(snapshot.child(ID).exists()){
                             Toast.makeText(getApplicationContext(),"Sign Fail- id", Toast.LENGTH_LONG).show();
                         }
                         else {
@@ -69,7 +69,6 @@ public class Signup1Activity extends AppCompatActivity {
                     }
                 });
 
-
             }
         });
     }
@@ -79,6 +78,6 @@ public class Signup1Activity extends AppCompatActivity {
         userData.setId(Id);
         userData.setPasswd(passwd);
         userData.setEmail(email);
-        myRef.child("UserData").child(email).setValue(userData);
+        myRef.child("UserData").child(Id).setValue(userData);
     }
 }
