@@ -1,5 +1,0 @@
- dependencies {
-        ...
-        // TFLite GPU delegate 2.3.0 or above is required.
-        implementation 'org.tensorflow:tensorflow-lite-gpu:2.3.0'
-    }
