@@ -2,6 +2,7 @@
 
 import keras_nlp
 import tensorflow as tf
+import tensorflow_text as tf_text
 from tensorflow.lite.python import interpreter
 import numpy as np
 import time
@@ -41,7 +42,7 @@ def run_inference(input, generate_tflite):
 
     generator = interp.get_signature_runner('serving_default')
     output = generator(prompt=np.array([input]))
-    print("\nGenerated with TFLite:\n", output["output_0"])
+    print("\Generated with TFLite:\n", output["output_0"])
 
 # Convert to TFLite format
 gpt2_lm.jit_compile = False
