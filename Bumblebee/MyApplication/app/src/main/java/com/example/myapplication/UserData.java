@@ -4,6 +4,7 @@ public class UserData {
     private String userName;
     private String email;
     private String passwd;
+    private String Id;
 
 
     public String getUserName(){
@@ -12,6 +13,10 @@ public class UserData {
     public void setUserName(String name){
         this.userName=name;
     }
+
+    public String getId() {return Id;}
+
+    public void setId(String id) { this.Id = id; }
 
     public String getEmail() {
         return email;
