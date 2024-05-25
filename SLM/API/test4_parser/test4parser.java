@@ -13,7 +13,8 @@ import org.xml.sax.InputSource;
 import org.xml.sax.SAXException;
 import java.io.IOException;
 
-public class test3parser {
+
+public class test4parser {
 
     public static void main(String[] args) {
         // Declare the XML data as a string within the main method
