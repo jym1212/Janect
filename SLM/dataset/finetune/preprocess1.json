@@ -1,0 +1,54 @@
+{
+ "Summary": "The national technical qualification system is a system that contributes to economic development by nationally evaluating the technical and functional level of corporate human resources, supports human resource management of companies, and induces improvement in vocational skills. 19 ministries/agencies / The committee oversees the eligible categories, and the Ministry of Employment and Labor manages 10 participating organizations.”,
+ "related_terms": {
+ “Technician”: “Skill scope to perform tasks such as planning, research, design, analysis, investigation, professional testing, construction, evaluation, assessment, analysis, business management, and technology management based on advanced knowledge and light experience. Enjoy better benefits",
+ "Field": "Broaden the scope of functional areas that can perform tasks such as work management, guidance/supervision of skilled personnel, field training, and field management with the highest level of ability",
+ “Technician”: “A high level in the technical field that can perform tasks such as design, verification, and analysis based on engineering technology theory and knowledge”,
+ “Article”: “About a lower class of technology/field that can perform basic technology and function based on technology-based theory, knowledge, or talent function as a basic industry”,
+ “Sa”: “Granting a lower rank in a field where one has the ability to perform tasks such as manufacturing, engineering, manipulating, chauffeuring, scrolling, maintaining, working or managing tasks, etc. with skilled skills”;
+ “Service”: “Classifies technology/skills fields into grades 1 to 3 and single items based on service field grading qualifications”,
+ “Applicant”: “A person who is not actually in the written or practical exam”
+ },
+ "data": [
+ {
+ "instruction": "Summary and explain the national technical qualification system.",
+ "input": "Concept and overview of the national technical qualification system...",
+ "output": "The National Technical Qualifications System assesses the level of skills and functions of the workforce needed by enterprises..."
+ },
+ {
+ "instruction": "Explain the importance of technical certification in the automotive industry.",
+ "input": "Elaborates on the importance and application of technical certification, especially in the automotive sector...",
+ "output": "In the automotive industry, technical certification ensures that technicians meet the high standards required for complex vehicle systems..."
+ },
+ {
+ "instruction": "Discuss the role of technical certifications in career advancement in information technology.",
+ "input": "Consider the relevance of technical certifications for IT industry professionals...",
+ "output": "IT skills certification helps professionals validate their skills and knowledge, leading to better job opportunities and higher salaries..."
+ },
+ {
+ "instruction": "Summary the national technical qualification system and explain related measures.",
+ "Input": "The national technical qualification system contributes to the development of the national economy by respecting and verifying the technical and functional level of the human resources required by companies, and provides information on the job performance capabilities of industrial forces to the market for the first time. “We provide support to companies in their workforce management and the ability to find and improve their professional skills through acquisition and performance.”
+ "Calculation": "The national technical qualification system is a system that contributes to economic development by nationally evaluating the technical and functional level of a company's workforce, supports the company's human resource management, and induces the improvement of sought-after vocational skills. 19 ministries/agencies / The committee is qualified and managed by 10 agencies.”
+ }
+ ],
+ "stat_interpretation": {
+ "number_change_and_factor": {
+ "applicant_trend": {
+ "summary": "(summary description)"
+ },
+ "examinee_trends_and_analytic": {
+ "summary": "(summary description)"
+ }
+ },
+ "policy_direction": "(Content about policy direction)"
+ },
+ "notes": "(Notes)",
+ "metadata": {
+ "department": "Ministry of Employment and Labor, Vocational Competency Evaluation Department",
+ "Contact": "044-202-7298",
+ "recent_update": "2023-07-04",
+ "next_update": "2024-07-04",
+ "Source": "[National Technical Qualification Statistics Yearbook (Certification No. 387004)] (every June), Ministry of Employment and Labor. Human Resources Development Service of Korea",
+ "release_cycle": "1 year"
+ }
+}
