@@ -1,55 +1,54 @@
 {
-  "summary": "국가기술자격제도는 기업 인력의 기술·기능수준을 국가에서 평가하여 경제발전에 기여하고 기업의 인력관리를 지원하며 근로자의 직업능력 향상을 유도하는 제도입니다. 19개 부처/청/위원회가 자격종목을 관장하고, 고용노동부가 총괄 관리합니다. 자격시험은 10개 기관에 위탁되어 시행됩니다.",
-  "related_terms": {
-    "기술사": "고도의 전문지식과 실무경험을 바탕으로 계획, 연구, 설계, 분석, 조사, 시험, 시공, 감리, 평가, 진단, 사업관리, 기술관리 등의 업무를 수행할 수 있는 기술 분야의 최상위 등급 종목",
-    "기능장": "최상급 숙련기능을 가지고 작업관리, 기능인력 지도/감독, 현장훈련, 현장 관리 등의 업무를 수행할 수 있는 기능분야의 최상위 등급 종목",
-    "기사": "공학적 기술이론과 지식을 바탕으로 설계, 시공, 분석 등의 업무를 수행할 수 있는 기술 분야의 상위등급 종목",
-    "산업기사": "기술 기초이론, 지식 또는 숙련기능을 바탕으로 복합적인 기초기술 및 기능 업무를 수행할 수 있는 기술/기능분야의 하위등급 종목",
-    "기능사": "숙련기능을 가지고 제작, 제조, 조작, 운전, 보수, 정비, 채취, 검사 또는 작업관리 등의 업무를 수행할 수 있는 기능분야의 하위등급 종목",
-    "서비스": "기술/기능분야를 제외한 서비스 분야 기초사무 자격으로 1~3급 및 단일종목으로 구분",
-    "응시자": "필기시험 또는 실기시험에 실제로 응시한 사람"
-  },
-  "data": [
-    {
-      "instruction": "Summarize and explain the national technical qualification system.",
-      "input": "Concept and overview of the national technical qualification system...",
-      "output": "The national technical qualification system evaluates the technical and functional level of workforce required by enterprises..."
-    },
-    {
-      "instruction": "Explain the significance of the technical certification in the automotive industry.",
-      "input": "Detail the importance and application of technical certifications specifically in the automotive sector...",
-      "output": "In the automotive industry, technical certifications ensure that technicians meet the high standards required for complex vehicle systems..."
-    },
-    {
-      "instruction": "Discuss the role of technical certifications in career advancement in information technology.",
-      "input": "Consider the relevance of technical certifications for professionals in the IT industry...",
-      "output": "Technical certifications in IT help professionals verify their skills and knowledge, leading to better job opportunities and higher salaries..."
-    },
-    {
-      "instruction": "국가기술자격제도에 대해 요약하고, 관련 용어를 설명하시오.",
-      "input": "국가기술자격제도는 기업이 필요로 하는 인력의 기술·기능 수준을 국가에서 객관적으로 평가·검정해줌으로써 국가 경제발전에 기여하고, 산업인력의 직무수행능력에 관한 정보를 노동시장에 제공함으로써 기업의 인력관리를 지원하는 한편, 근로자에게는 자격취득을 통해 직업능력을 습득·향상토록 유인하는 기능을 수행함",
-      "output": "국가기술자격제도는 기업 인력의 기술·기능 수준을 국가에서 평가하여 경제 발전에 기여하고 기업의 인력관리를 지원하며 근로자의 직업능력 향상을 유도하는 제도입니다. 19개 부처/청/위원회가 자격종목을 관장하고, 고용노동부가 총괄 관리합니다. 자격시험은 10개 기관에 위탁되어 시행됩니다."
-    }
-  ],
-  "stat_interpretation": {
-    "numerical_changes_and_factors": {
-      "applicant_trends": {
-        "summary": "(요약 생략)"
-      },
-      "examinee_trends_and_analysis": {
-        "summary": "(요약 생략)"
-      }
-    },
-    "policy_direction": "(정책 방향에 대한 내용 생략)"
-  },
-  "notes": "(유의사항 내용 생략)",
-  "metadata": {
-    "department": "고용노동부, 직업능력평가과",
-    "contact": "044-202-7298",
-    "recent_update": "2023-07-04",
-    "next_update": "2024-07-04",
-    "source": "[국가기술자격통계연보(승인번호 제387004호)](매년 6월), 고용노동부 . 한국산업인력공단",
-    "release_cycle": "1년"
-  }
+ "Summary": "The national technical qualification system is a system that contributes to economic development by nationally evaluating the technical and functional level of corporate human resources, supports human resource management of companies, and induces improvement in vocational skills. 19 ministries/agencies / The committee oversees the eligible categories, and the Ministry of Employment and Labor manages 10 participating organizations.”,
+ "related_terms": {
+ “Technician”: “Skill scope to perform tasks such as planning, research, design, analysis, investigation, professional testing, construction, evaluation, assessment, analysis, business management, and technology management based on advanced knowledge and light experience. Enjoy better benefits",
+ "Field": "Broaden the scope of functional areas that can perform tasks such as work management, guidance/supervision of skilled personnel, field training, and field management with the highest level of ability",
+ “Technician”: “A high level in the technical field that can perform tasks such as design, verification, and analysis based on engineering technology theory and knowledge”,
+ “Article”: “About a lower class of technology/field that can perform basic technology and function based on technology-based theory, knowledge, or talent function as a basic industry”,
+ “Sa”: “Granting a lower rank in a field where one has the ability to perform tasks such as manufacturing, engineering, manipulating, chauffeuring, scrolling, maintaining, working or managing tasks, etc. with skilled skills”;
+ “Service”: “Classifies technology/skills fields into grades 1 to 3 and single items based on service field grading qualifications”,
+ “Applicant”: “A person who is not actually in the written or practical exam”
+ },
+ "data": [
+ {
+ "instruction": "Summary and explain the national technical qualification system.",
+ "input": "Concept and overview of the national technical qualification system...",
+ "output": "The National Technical Qualifications System assesses the level of skills and functions of the workforce needed by enterprises..."
+ },
+ {
+ "instruction": "Explain the importance of technical certification in the automotive industry.",
+ "input": "Elaborates on the importance and application of technical certification, especially in the automotive sector...",
+ "output": "In the automotive industry, technical certification ensures that technicians meet the high standards required for complex vehicle systems..."
+ },
+ {
+ "instruction": "Discuss the role of technical certifications in career advancement in information technology.",
+ "input": "Consider the relevance of technical certifications for IT industry professionals...",
+ "output": "IT skills certification helps professionals validate their skills and knowledge, leading to better job opportunities and higher salaries..."
+ },
+ {
+ "instruction": "Summary the national technical qualification system and explain related measures.",
+ "Input": "The national technical qualification system contributes to the development of the national economy by respecting and verifying the technical and functional level of the human resources required by companies, and provides information on the job performance capabilities of industrial forces to the market for the first time. “We provide support to companies in their workforce management and the ability to find and improve their professional skills through acquisition and performance.”
+ "Calculation": "The national technical qualification system is a system that contributes to economic development by nationally evaluating the technical and functional level of a company's workforce, supports the company's human resource management, and induces the improvement of sought-after vocational skills. 19 ministries/agencies / The committee is qualified and managed by 10 agencies.”
+ }
+ ],
+ "stat_interpretation": {
+ "number_change_and_factor": {
+ "applicant_trend": {
+ "summary": "(summary description)"
+ },
+ "examinee_trends_and_analytic": {
+ "summary": "(summary description)"
+ }
+ },
+ "policy_direction": "(Content about policy direction)"
+ },
+ "notes": "(Notes)",
+ "metadata": {
+ "department": "Ministry of Employment and Labor, Vocational Competency Evaluation Department",
+ "Contact": "044-202-7298",
+ "recent_update": "2023-07-04",
+ "next_update": "2024-07-04",
+ "Source": "[National Technical Qualification Statistics Yearbook (Certification No. 387004)] (every June), Ministry of Employment and Labor. Human Resources Development Service of Korea",
+ "release_cycle": "1 year"
+ }
 }
-
