@@ -43,17 +43,6 @@ https://www.data.go.kr/data/15003029/openapi.do<br>
 
 # usage
 
-일반 인증키
-(Encoding)	
-iBnhEtxdvRgWB11T%2FLDEYLkaJ4HMmCecarGXtMain7K20fr%2F7JhIxc1Q6VYvXE9SzOGXjcCYgr22eBhvAxxtxA%3D%3D
-일반 인증키
-(Decoding)	
-iBnhEtxdvRgWB11T/LDEYLkaJ4HMmCecarGXtMain7K20fr/7JhIxc1Q6VYvXE9SzOGXjcCYgr22eBhvAxxtxA==
-
-
-
-
-
 #개발 환경 설정
 
 Android Studio 설치: 자넥트 앱 개발 및 빌드 환경
